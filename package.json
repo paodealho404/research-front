@@ -1,8 +1,8 @@
 {
   "name": "experiment-gaxla",
-  "homepage": "http://estudodecaso-ufal.com",
   "version": "1.1.0",
-  "private": true,
+  "private": false,
+  "homepage": ".",
   "dependencies": {
     "@material-ui/core": "^4.9.4",
     "@material-ui/icons": "^4.9.1",
