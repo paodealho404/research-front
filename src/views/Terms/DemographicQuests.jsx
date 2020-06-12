@@ -166,6 +166,7 @@ class FormContainer extends React.Component {
     redirect() {
         axios.get(baseUrl + '/getParticipants')
             .then((res) => {
+                console.log(res.data);
                 const participant_id = res.data[0].count + 1;
                 const dashboard_perm = [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]];
                 const perm = dashboard_perm[(participant_id - 1) % dashboard_perm.length];
