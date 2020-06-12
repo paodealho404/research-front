@@ -14,7 +14,7 @@ import TextArea from "./components/TextArea";
 import Header from "./components/Header";
 import axios from 'axios';
 
-const baseUrl = (process.env.REACT_APP_API_URL+process.env.PORT+'/course') || "http://localhost:4000/course";
+const baseUrl = (process.env.REACT_APP_API_URL+'/course') || "http://localhost:4000/course";
 
 class FormContainer extends React.Component {
     constructor(props) {

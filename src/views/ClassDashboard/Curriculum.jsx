@@ -13,7 +13,7 @@ import ClassInfo_1 from './Dashboard_1/ClassInfo';
 import ClassInfo_2 from './Dashboard_2/ClassInfo';
 import ClassInfo_3 from './Dashboard_3/ClassInfo';
 
-const baseUrl = (process.env.REACT_APP_API_URL+process.env.PORT) || "http://localhost:4000";
+const baseUrl = (process.env.REACT_APP_API_URL) || "http://localhost:4000";
 
 const styleSelect = {
     option: (styles, { data, isDisabled, isFocused, isSelected  }) => {

@@ -14,7 +14,7 @@ import {
     Col
 } from "reactstrap";
 
-const baseUrl = (process.env.REACT_APP_API_URL+process.env.PORT) || "http://localhost:4000";
+const baseUrl = (process.env.REACT_APP_API_URL) || "http://localhost:4000";
 
 /* 
     * Component responsible for updating and Class Distribution by Level
