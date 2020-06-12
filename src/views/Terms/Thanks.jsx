@@ -27,34 +27,27 @@ class Thanks extends React.Component {
                 this.setState(prevState => ({
                     ...prevState, last_id: res.data.id
                 }), () => {
-                    let participant = JSON.parse(sessionStorage.getItem('participant'));
-        
-                    axios.post(baseUrl + '/createParticipant', participant)
-                    .then( resp => 
+                    let i, req = [];
+                    for(i = 1; i <= 3; i++)
                     {
-                        let i, req = [];
-                        for(i = 1; i <= 3; i++)
-                        {
-                            let survey = JSON.parse(sessionStorage.getItem('survey' + i));
-                            survey.participant_id = this.state.last_id;
-                            let promise = axios({
-                                method: 'post',
-                                url: baseUrl+'/createSurvey',
-                                data: survey
-                            });
-                            req.push(promise);
-                        }
-                        axios.all(req)
-                        .then(axios.spread((...responses)=>{
-                            responses.forEach(res=> console.log('Saved'));
+                        let survey = JSON.parse(sessionStorage.getItem('survey' + i));
+                        survey.participant_id = this.state.last_id;
+                        let promise = axios({
+                            method: 'post',
+                            url: baseUrl+'/createSurvey',
+                            data: survey
+                        });
+                        req.push(promise);
+                    }
+                    axios.all(req)
+                    .then(axios.spread((...responses)=>{
+                        responses.forEach(res=> console.log('Saved'));
 
-                            sessionStorage.clear();
-                        }))
-                        .catch(error=>{
-                            console.log(error);
-                        })
+                        sessionStorage.clear();
+                    }))
+                    .catch(error=>{
+                        console.log(error);
                     })
-                    .catch(error=> console.log(error));
                 });
             })
             .catch(error => {
