@@ -13,7 +13,7 @@ import AverageStudentsPoints from "../DescripitiveData/AverageStudentsPoints";
 import MinimumPercentage from "../DescripitiveData/MinimumPercentage";
 
 import { LevelChart, LevelChartChild } from "../Chart/LevelChart/LevelChart.jsx";
-import { ReachStatisticsChart, ReachStatisticsChild } from "../Chart/ReachStatisticsChart/ReachStatisticsChart.jsx";
+//import { ReachStatisticsChart, ReachStatisticsChild } from "../Chart/ReachStatisticsChart/ReachStatisticsChart.jsx";
 import { MissionChart, MissionChartChild } from "../Chart/MissionChart/MissionChart.jsx";
 
 class ClassInfo extends React.Component{ 

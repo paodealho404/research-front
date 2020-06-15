@@ -22,7 +22,7 @@ class ClassDashboard extends React.Component {
 
     componentWillMount() {
         let participant_info = JSON.parse(sessionStorage.getItem('participant')).dashboard_sequence;
-        if(participant_info.indexOf(2) == -1 || participant_info[0] == 2){
+        if(participant_info.indexOf(2) === -1 || participant_info[0] === 2){
             this.setState({ render: true });
         }
     }
