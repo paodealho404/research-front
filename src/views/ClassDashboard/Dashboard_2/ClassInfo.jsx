@@ -20,7 +20,7 @@ import MinimumPercentage from "../DescripitiveData/MinimumPercentage";
 import HelpIcon from "../../../components/HelpIcon/HelpIcon.jsx";
 
 import { LevelChart, LevelChartChild } from "../Chart/LevelChart/LevelChart.jsx";
-
+import { PerformanceChart } from "../Chart/PerformanceChart/PerformanceChart.jsx";
 import { MissionChart, MissionChartChild } from "../Chart/MissionChart/MissionChart.jsx";
 
 class ClassInfo extends React.Component{ 
