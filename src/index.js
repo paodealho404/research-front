@@ -20,8 +20,11 @@ import Thanks from 'views/Terms/Thanks.jsx';
 import ProjectTutorial from 'views/Terms/ProjectTutorial';
 import DashboardQuestions from 'views/Terms/DashboardQuestions';
 
+import ScrollToTop from "./components/Scroll/ScrollToTop";
+
 ReactDOM.render(
 <BrowserRouter>
+    <ScrollToTop/>
     <Switch>
         <Route exact path="/" component = {StarterTerm}/>
         <Route path="/demographicquest" component = {DemographicQuests}/>
