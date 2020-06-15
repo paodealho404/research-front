@@ -12,7 +12,7 @@ import Checkbox from "./components/Checkbox";
 import Header from "./components/Header";
 import LargeTextArea from "./components/LargeTextArea";
 
-const baseUrl = ((process.env.REACT_APP_API_URL) || "http://localhost:4000") + '/course';
+//const baseUrl = ((process.env.REACT_APP_API_URL) || "http://localhost:4000") + '/course';
 
 class DashboardQuestions extends React.Component {
     constructor(props) {
@@ -126,6 +126,8 @@ class DashboardQuestions extends React.Component {
             case 'q9':
                 q9AnswerValid = value.length>0 ? true : false;
                 fieldValidationErrors.q9 = q9AnswerValid ? '' : 'notValid';
+                break;
+            default:
                 break;
         }
 
