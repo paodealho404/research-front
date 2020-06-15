@@ -11,6 +11,7 @@ import {
 import PopUp from '../PopUp';
 import Checkbox from "./components/Checkbox";
 import TextArea from "./components/TextArea";
+import SelectionArea from "./components/SelectionArea";
 import Header from "./components/Header";
 import axios from 'axios';
 
@@ -44,6 +45,7 @@ class FormContainer extends React.Component {
             ageOptions: ['Inferior a 18 anos', '18 a 25 anos', '26 a 40 anos', '41 a 65 anos', 'Superior a 65 anos'],
             genderOptions: ['Feminino', 'Masculino', 'Outros'],
             educational_levelOptions: ['Ensino Médio', 'Ensino Técnico', 'Ensino Superior', 'Mestrado', 'Doutorado'],
+            state_options: ['Acre (AC)', 'Alagoas (AL)', 'Amapá (AP)', 'Amazonas (AM)', 'Bahia (BA)', 'Ceará (CE)', 'Distrito Federal (DF)', 'Espírito Santo (ES)', 'Goiás (GO)', 'Maranhão (MA)', 'Mato Grosso (MT)', 'Mato Grosso do Sul (MS)', 'Minas Gerais (MG)', 'Pará (PA)', 'Paraíba (PB)', 'Paraná (PR)', 'Pernambuco (PE)', 'Piauí (PI)', 'Rio de Janeiro (RJ)', 'Rio Grande do Norte (RN)', 'Rio Grande do Sul (RS)', 'Rondônia (RO)', 'Roraima (RR)', 'Santa Catarina (SC)', 'São Paulo (SP)', 'Sergipe (SE)', 'Tocantins (TO)'],
         }
         this.handleTextArea = this.handleTextArea.bind(this);
         this.handleCheckBoxAge = this.handleCheckBoxAge.bind(this);
@@ -245,14 +247,13 @@ class FormContainer extends React.Component {
                                 handleChange={this.handleCheckBoxEducacationalLevel} />
                             <br />
                             <br />
-                            <TextArea
+                            <SelectionArea
                                 title={'Informe seu Estado:'}
-                                rows={1}
                                 name={'state'}
                                 // value={this.state.educational_levelOptions}
-                                // selectedOptions = {this.state.participant.educational_level}
                                 value={this.state.participant.state}
-                                handleChange={this.handleTextArea} />
+                                handleChange={this.handleTextArea}
+                                options={this.state.state_options}/>
                             <br />
                             <br />
                             <Col sm={{ span: 10, offset: 5 }}>
