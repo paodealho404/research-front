@@ -244,12 +244,12 @@ class ReachStatisticsChild extends React.Component {
                 <Nav tabs className="d-flex justify-content-around" style={{ fontSize: "0.85em" }}>
                     <NavItem>
                         <NavLink className={"" + isOpenClass[0]} onClick={() => this.toggleCollapse(0)} style={{ cursor: "pointer" }}>
-                            Alunos que alcançaram
+                            Alunos que dominaram o assunto
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className={"" + isOpenClass[1]} onClick={() => this.toggleCollapse(1)} style={{ cursor: "pointer" }}>
-                            Alunos que não alcançaram
+                            Alunos que não dominara o assunto
                         </NavLink>
                     </NavItem>
                 </Nav>

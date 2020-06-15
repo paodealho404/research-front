@@ -97,12 +97,10 @@ render() {
         </Col>
         <Col md="12">
           <Dropdown 
-            id = "3" icon = "fa fa-info-circle" title = "Alcance da Porcentagem Mínima"
+            id = "3" icon = "fa fa-info-circle" title = "Alcance do Domínio do Assunto"
             help = {
               <div className="text-center">
-                Este gráfico mostra a quantidade de alunos 
-                que atingiram e não atingiram a porcentagem 
-                mínima de interação com os recursos deste assunto.
+                Este gráfico mostra a quantidade de alunos que atingiram e não atingiram o domínio deste assunto com base em suas interações com os recursos deste tópico.
               </div>
             }
             content = {
