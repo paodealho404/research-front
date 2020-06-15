@@ -41,14 +41,14 @@ class StarterTerm extends React.Component {
             <Col sm="50" md={{ size: 8, offset: 2 }} className="text-justify">
             <p className= " text-center font-weight-bold " style={{fontFamily: 'Calibri', fontSize: '25px'}}>Termo de Consentimento Livre e Esclarecido</p>
             <br/>
-            <p className= " text-justify font-weight-bold " style={{fontFamily: 'Calibri', fontSize: '20px'}}>Leia atentamente o formulário de consentimento abaixo e comece a participar do estudo se você concorda com os termos de consentimento.</p>
+            <p className= " text-justify font-weight-bold " style={{fontFamily: 'Calibri', fontSize: '20px'}}>Leia atentamente o formulário de consentimento abaixo e comece a participar da pesquisa se você concorda com os termos de consentimento.</p>
             <br/>
             <p className= " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> 
                 Você está sendo convidado a participar de uma pesquisa de opinião. O objetivo desta pesquisa é avaliar quais informações dos estudantes, apresentadas através de diferentes painéis de dados, melhor auxilia o professor no processo de tomada de decisão durante o ensino/aprendizagem em um plataforma educacional gamificada. Uma plataforma educacional gamificada é um ambiente que utiliza elementos de jogos (exemplo: pontos, ranking, missão) com o intuito de aumentar o engajamento, motivação e resultados de aprendizagem dos alunos durante o processo de aprendizagem.
             </p>
             <br/>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
-              <strong> Título do Estudo: </strong> Avaliação de diferentes painéis de dados para o auxílio de professores no processo de tomada de decisão em Ambientes Educacionais Gamificados.
+              <strong> Título da Pesquisa: </strong> Avaliação de diferentes painéis de dados para o auxílio de professores no processo de tomada de decisão em Ambientes Educacionais Gamificados.
             </p>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
                 <strong> Pesquisadores: </strong> 
@@ -63,7 +63,7 @@ class StarterTerm extends React.Component {
             </ul>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
                 <strong> Finalidade e Procedimento: </strong>
-                A finalidade desta pesquisa de opinião é avaliar, no ponto de vista do professor, quais informações dos estudantes melhor o auxilia  no processo de tomada de decisão durante o ensino/aprendizagem em uma plataforma de ensino gamificada. Com intuito de alcançar o objetivo da pesquisa, três painéis com diferentes dados dos estudantes serão analisados. O primeiro painel terá informações apenas da interação dos estudantes com os recursos de aprendizagem do sistema. O segundo painel terá apenas informações da interação dos estudantes com os elementos de gamificação do sistema. E por fim, o terceiro painel terá informações relacionada tanto a interação dos alunos com os recursos de aprendizagem quanto com com os elementos de gamificação do sistema gamificado. Portanto, a sua participação nesta pesquisa consistirá na realização das seguintes atividades: 
+                A finalidade desta pesquisa de opinião é avaliar, no ponto de vista do professor, quais informações dos estudantes melhor o auxilia  no processo de tomada de decisão durante o ensino/aprendizagem em uma plataforma de ensino gamificada. Com intuito de alcançar o objetivo da pesquisa, três painéis com diferentes dados dos estudantes serão analisados. O primeiro painel terá informações apenas da interação dos estudantes com os recursos de aprendizagem do sistema. O segundo painel terá apenas informações da interação dos estudantes com os elementos de gamificação do sistema. E por fim, o terceiro painel terá informações relacionadas tanto a interação dos alunos com os recursos de aprendizagem quanto com com os elementos de gamificação do sistema gamificado. Portanto, a sua participação nesta pesquisa consistirá na realização das seguintes atividades: 
             </p>
             <ul>
                 <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
@@ -89,7 +89,7 @@ class StarterTerm extends React.Component {
                 <strong> Direito de Retirada: </strong> A participação neste estudo é voluntária, e você pode decidir não participar a qualquer momento, ou optar por não responder a perguntas com as quais não se sinta confortável. As respostas da pesquisa permanecerão anônimas. Uma vez que a pesquisa é anônima, quando é submetida, não pode ser removida.
             </p>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
-                <strong> Dúvidas: </strong> Se você tiver alguma dúvida sobre o estudo, não hesite em perguntar a qualquer momento. Você também está livre para entrar em contato com os pesquisadores se você tiver dúvidas no futuro. Este estudo não precisa ser submetido ao comitê de ética, pois ele está avaliando apenas recursos para melhorar o software desenvolvido.
+                <strong> Dúvidas: </strong> Se você tiver alguma dúvida sobre a pesquisa, não hesite em perguntar a qualquer momento. Você também está livre para entrar em contato com os pesquisadores se você tiver dúvidas no futuro. Este estudo não precisa ser submetido ao comitê de ética, pois ele está recebendo somente opinião sobre recursos para melhorar o software desenvolvido.
             </p>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
                 <strong> Acompanhamento: </strong> Se você tiver interesse em saber os resultados deste estudo, você pode contatar os pesquisadores usando as informações de contato fornecidas acima.
