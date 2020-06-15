@@ -51,28 +51,28 @@ class StarterTerm extends React.Component {
               <strong> Título do Estudo: </strong> Avaliação de diferentes painéis de dados para o auxílio de professores no processo de tomada de decisão em Ambientes Educacionais Gamificados.
             </p>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
-              <strong> Pesquisadores: </strong> 
-              <ul>
-                <li className = " text-justify "> Kamilla Tenório (kktas@ic.ufal.br)</li>
-                <li className = " text-justify "> Diego Dermeval (diego.matos@famed.ufal.br)</li>
-                <li className = " text-justify "> Alexandre Machado (alexandretopeca@gmail.com)</li>
-                <li className = " text-justify "> Bruno Lemos (bruno.lemos.ec@gmail.com)</li>
-                <li className = " text-justify "> Pedro Henrique (phbn@ic.ufal.br)</li>
-                <li className = " text-justify "> Rodrigo Santos (rss3@ic.ufal.br)</li>
-              </ul>
+                <strong> Pesquisadores: </strong> 
             </p>
+            <ul>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> Kamilla Tenório (kktas@ic.ufal.br)</li>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> Diego Dermeval (diego.matos@famed.ufal.br)</li>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> Alexandre Machado (alexandretopeca@gmail.com)</li>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> Bruno Lemos (bruno.lemos.ec@gmail.com)</li>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> Pedro Henrique (phbn@ic.ufal.br)</li>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> Rodrigo Santos (rss3@ic.ufal.br)</li>
+            </ul>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
-                <strong> Finalidade e Procedimento: </strong>A finalidade desta pesquisa de opinião é avaliar, no ponto de vista do professor, quais informações dos estudantes melhor o auxilia  no processo de tomada de decisão durante o ensino/aprendizagem em uma plataforma de ensino gamificada. Com intuito de alcançar o objetivo da pesquisa, três painéis com diferentes dados dos estudantes serão analisados. O primeiro painel terá informações apenas da interação dos estudantes com os recursos de aprendizagem do sistema. O segundo painel terá apenas informações da interação dos estudantes com os elementos de gamificação do sistema. E por fim, o terceiro painel terá informações relacionada tanto a interação dos alunos com os recursos de aprendizagem quanto com com os elementos de gamificação do sistema gamificado. Portanto, a sua participação nesta pesquisa consistirá na realização das seguintes atividades: <br/><br/>
-                <ul>
-                    <li className = " text-justify ">
-                    Primeiro, você irá responder um questionário demográfico, onde deve ser informado seu gênero, idade, nível educacional que leciona e estado onde mora, assim como seu nível de habilidade técnica em relação ao uso de tecnologias de informação. 
-                    </li>
-                    <li className = " text-justify ">
-                    Segundo, você irá visualizar os 3 diferentes painéis de dados em ordem aleatória. Após a visualização de cada um dos painéis, você irá responder a um questionário com 9 perguntas, cujo o objetivo é avaliar sua compreensão, utilidade percebida e mudanças comportamentais em relação aos diferentes painéis. 
-                    </li>
-                </ul>
+                <strong> Finalidade e Procedimento: </strong>
+                A finalidade desta pesquisa de opinião é avaliar, no ponto de vista do professor, quais informações dos estudantes melhor o auxilia  no processo de tomada de decisão durante o ensino/aprendizagem em uma plataforma de ensino gamificada. Com intuito de alcançar o objetivo da pesquisa, três painéis com diferentes dados dos estudantes serão analisados. O primeiro painel terá informações apenas da interação dos estudantes com os recursos de aprendizagem do sistema. O segundo painel terá apenas informações da interação dos estudantes com os elementos de gamificação do sistema. E por fim, o terceiro painel terá informações relacionada tanto a interação dos alunos com os recursos de aprendizagem quanto com com os elementos de gamificação do sistema gamificado. Portanto, a sua participação nesta pesquisa consistirá na realização das seguintes atividades: 
             </p>
-            <br/>
+            <ul>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
+                Primeiro, você irá responder um questionário demográfico, onde deve ser informado seu gênero, idade, nível educacional que leciona e estado onde mora, assim como seu nível de habilidade técnica em relação ao uso de tecnologias de informação. 
+                </li>
+                <li className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
+                Segundo, você irá visualizar os 3 diferentes painéis de dados em ordem aleatória. Após a visualização de cada um dos painéis, você irá responder a um questionário com 9 perguntas, cujo o objetivo é avaliar sua compreensão, utilidade percebida e mudanças comportamentais em relação aos diferentes painéis. 
+                </li>
+            </ul>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
                 <strong> Potenciais Benefícios: </strong> Os resultados da pesquisa de opinião podem contribuir para um melhor entendimento de quais dados dos estudantes melhor apoia o processo de tomada de decisão de professores em um ambiente educacional gamificado.
             </p>
