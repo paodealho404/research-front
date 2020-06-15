@@ -227,7 +227,7 @@ class FormContainer extends React.Component {
                                 handleChange={this.handleCheckBoxGender} />
                             <br />
                             <br />
-                            <Checkbox title={'Selecione seu nível de habilidade técnica:'}
+                            <Checkbox title={'Selecione seu nível de habilidade técnica em relação ao uso de tecnologias da informação:'}
                                 name={'technical_level'}
                                 options={this.state.technical_level_options}
                                 selectedOptions={this.state.participant.technical_level}
@@ -246,7 +246,7 @@ class FormContainer extends React.Component {
                             <br />
                             <br />
                             <TextArea
-                                title={'Informe seu Estado: '}
+                                title={'Informe seu Estado:'}
                                 rows={1}
                                 name={'state'}
                                 // value={this.state.educational_levelOptions}

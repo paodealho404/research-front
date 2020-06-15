@@ -44,7 +44,7 @@ class StarterTerm extends React.Component {
             <p className= " text-justify font-weight-bold " style={{fontFamily: 'Calibri', fontSize: '20px'}}>Leia atentamente o formulário de consentimento abaixo e comece a participar do estudo se você concorda com os termos de consentimento.</p>
             <br/>
             <p className= " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}> 
-            Você está sendo convidado a participar de uma pesquisa de opinião. O objetivo desta pesquisa é avaliar quais informações dos estudantes, apresentadas através de diferentes painéis de dados, melhor auxilia o professor no processo de tomada de decisão durante o ensino/aprendizagem em uma plataforma de ensino gamificada. 
+                Você está sendo convidado a participar de uma pesquisa de opinião. O objetivo desta pesquisa é avaliar quais informações dos estudantes, apresentadas através de diferentes painéis de dados, melhor auxilia o professor no processo de tomada de decisão durante o ensino/aprendizagem em um plataforma educacional gamificada. Uma plataforma educacional gamificada é um ambiente que utiliza elementos de jogos (exemplo: pontos, ranking, missão) com o intuito de aumentar o engajamento, motivação e resultados de aprendizagem dos alunos durante o processo de aprendizagem.
             </p>
             <br/>
             <p className = " text-justify " style={{fontFamily: 'Calibri', fontSize: '20px'}}>
