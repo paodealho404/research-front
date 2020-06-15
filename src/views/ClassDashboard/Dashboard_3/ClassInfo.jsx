@@ -88,7 +88,7 @@ render() {
             <CardBody>
               <div style = {{ borderTop: "0.1em solid grey", opacity: "0.3", margin: "0 0.5em 1em 0.5em" }}></div>
                 <div>
-                  <PerformanceChart classroomId={ classroomId } curriculumId={ curriculumId } courseId={ courseId }/>
+                  <PerformanceChart classroomId={ classroomId } curriculumId={ curriculumId } courseId={ courseId } renderMissions={ true }/>
                 </div>
             </CardBody>
             <CardFooter>
