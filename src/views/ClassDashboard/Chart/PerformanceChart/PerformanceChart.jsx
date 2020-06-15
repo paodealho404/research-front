@@ -279,7 +279,8 @@ class PerformanceChart extends React.Component {
                     let position_inarray = DateArray.findIndex(x => x.date.getTime() === current_date.getTime());
 
                     // Push new mission in array to render on chart if in range of chart
-                    if (position_inarray !== -1)
+                    if(this.props.renderMissions) {
+                        if (position_inarray !== -1)
                         missions_for_render.push(
                             {
                                 type: "line",
@@ -305,6 +306,7 @@ class PerformanceChart extends React.Component {
                                 }
                             }
                         );
+                    }
                 }
 
                 // Assigns the information on the chart
