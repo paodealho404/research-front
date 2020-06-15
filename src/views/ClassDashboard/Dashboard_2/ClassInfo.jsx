@@ -32,22 +32,6 @@ render() {
           <MinimumPercentage classroomId={ classroomId } curriculumId={ curriculumId }/>
         </Col>
         <Col md="12">
-          <Dropdown 
-            id = "3" icon = "fa fa-info-circle" title = "Alcance da Porcentagem Mínima"
-            help = {
-              <div className="text-center">
-                Este gráfico mostra a quantidade de alunos 
-                que atingiram e não atingiram a porcentagem 
-                mínima de interação com os recursos deste assunto.
-              </div>
-            }
-            content = {
-              <ReachStatisticsChart classroomId={ classroomId } curriculumId={ curriculumId } courseId={ courseId }/>
-            }
-            contentchild = {
-              <ReachStatisticsChild classroomId={ classroomId } curriculumId={ curriculumId } courseId={ courseId }/>
-            }
-          />
         </Col>
         <Col md="12">
           <Dropdown 
