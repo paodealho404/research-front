@@ -19,7 +19,7 @@ import DemographicQuests from "views/Terms/DemographicQuests.jsx";
 import Thanks from 'views/Terms/Thanks.jsx';
 import ProjectTutorial from 'views/Terms/ProjectTutorial';
 import DashboardQuestions from 'views/Terms/DashboardQuestions';
-
+import FavoriteSurvey from 'views/Terms/FavoriteSurvey';
 import ScrollToTop from "./components/Scroll/ScrollToTop";
 
 ReactDOM.render(
@@ -34,6 +34,7 @@ ReactDOM.render(
         <Route path="/admin/classdashboard_2" render={props => <AdminLayout {...props} component={ClassDashboard_2}/>}/>
         <Route path="/admin/classdashboard_3" render={props => <AdminLayout {...props} component={ClassDashboard_3}/>}/>
         <Route path="/dashboardQuestions" component={DashboardQuestions}/>
+        <Route path="/favoriteDashboard" component={FavoriteSurvey}/>
         <Route path="/thanks" component={Thanks}/>
         <Redirect to="/"/>
     </Switch>
