@@ -1,10 +1,8 @@
 import React from 'react';
-
 import { Redirect } from 'react-router-dom';
-
 import axios from 'axios';
-
 import Header from "./components/Header";
+import ApiService from '../../ApiService';
 
 const baseUrl = ((process.env.REACT_APP_API_URL) || "http://localhost:4000") + '/course';
 
@@ -20,7 +18,9 @@ class Thanks extends React.Component {
     componentDidMount() {
         if(sessionStorage.getItem('accepted')&&sessionStorage.getItem('participant')&&sessionStorage.getItem('survey1')&&sessionStorage.getItem('survey2')&&sessionStorage.getItem('survey3')) {
         let participant_info = JSON.parse(sessionStorage.getItem('participant'));
-        axios.post(baseUrl + '/createParticipant', participant_info)
+        
+        ApiService.postResultados(`${baseUrl}/createParticipant`, participant_info)
+        //axios.post(baseUrl + '/createParticipant', participant_info)
             .then((res) => {
                 this.setState(prevState => ({
                     ...prevState, last_id: res.data.id

@@ -1,7 +1,5 @@
 import React from "react";
 
-import axios from 'axios';
-
 import {
     Col,
     FormGroup,
@@ -12,8 +10,7 @@ import Select from 'react-select';
 import ClassInfo1 from './Dashboard_1/ClassInfo';
 import ClassInfo2 from './Dashboard_2/ClassInfo';
 import ClassInfo3 from './Dashboard_3/ClassInfo';
-
-const baseUrl = (process.env.REACT_APP_API_URL) || "http://localhost:4000";
+import ApiService from '../../ApiService';
 
 const styleSelect = {
     option: (styles, { data, isDisabled, isFocused, isSelected  }) => {
@@ -55,11 +52,13 @@ class Curriculum extends React.Component {
         const courseId = this.props.courseId;
         const classroomId = this.props.classroomId;
 
-        const url = baseUrl + "/course/getCurriculum/" + courseId + "/" + classroomId;
+        //const url = baseUrl + "/course/getCurriculum/" + courseId + "/" + classroomId;
 
-        axios.get(url).then(res => {
-            if (res.data) {
-                const data = res.data;
+
+        ApiService.getCurriculum(`/course/getCurriculum/${courseId}/${classroomId}`).then(res => {
+        //axios.get(url).then(res => {
+            if (res) {
+                const data = res;
                 //const url = document.URL;
 
                 //var date = new Date().getDate();
