@@ -15,22 +15,14 @@ class ClassDashboard extends React.Component {
         this.state = {
             classroomId: "",
             teacherId: "",
-            courseId: "",
-            render: false
-        }
-    }
-
-    componentWillMount() {
-        let participant_info = JSON.parse(sessionStorage.getItem('participant')).dashboard_sequence;
-        if(participant_info.indexOf(1) === -1 || participant_info[0] === 1){
-            this.setState({ render: true });
+            courseId: ""
         }
     }
 
     render() {
         let participant_info = JSON.parse(sessionStorage.getItem('participant'));
         return (
-            this.state.render ? (
+            (participant_info.dashboard_sequence.indexOf(2) === -1 || participant_info.dashboard_sequence[0] === 1) ? (
                 <>
                     <div className="content" style={{paddingBottom: "15px"}}>
                     <Row></Row>

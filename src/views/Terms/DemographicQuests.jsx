@@ -28,7 +28,8 @@ class FormContainer extends React.Component {
                 educational_level: '',
                 state: '',
                 technical_level: '',
-                dashboard_sequence: null
+                dashboard_sequence: null,
+                favorite_dashboard: null
             },
             accepted: true,
             component: '',

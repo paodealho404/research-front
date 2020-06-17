@@ -16,33 +16,22 @@ class Dashboard extends React.Component {
         super(props);
         this.state = {
             backgroundColor: "black",
-            activeColor: "info",
-            accepted: true
+            activeColor: "info"
         };
         this.mainPanel = React.createRef();
     }
 
     componentDidMount() {
-        if (this.state.accepted) {
-            if (navigator.platform.indexOf("Win") > -1) {
-                ps = new PerfectScrollbar(this.mainPanel.current);
-                document.body.classList.toggle("perfect-scrollbar-on");
-            }
-        }
-    }
-
-    componentWillMount() {
-        if (!sessionStorage.getItem('accepted') || !sessionStorage.getItem('participant')) {
-            this.setState({ accepted: false });
+        if (navigator.platform.indexOf("Win") > -1 && ps) {
+            ps = new PerfectScrollbar(this.mainPanel.current);
+            document.body.classList.toggle("perfect-scrollbar-on");
         }
     }
 
     componentWillUnmount() {
-        if (this.state.accepted) {
-            if (navigator.platform.indexOf("Win") > -1) {
-                ps.destroy();
-                document.body.classList.toggle("perfect-scrollbar-on");
-            }
+        if (navigator.platform.indexOf("Win") > -1 && ps) {
+            ps.destroy();
+            document.body.classList.toggle("perfect-scrollbar-on");
         }
     }
 
@@ -63,7 +52,7 @@ class Dashboard extends React.Component {
 
     render() {
         return (
-            this.state.accepted ? (
+            (sessionStorage.getItem('accepted') && sessionStorage.getItem('participant')) ? (
                 <div className="wrapper">
                     <Sidebar
                         {...this.props}

@@ -34,7 +34,6 @@ class DashboardQuestions extends React.Component {
                 openQuestion2: '',
                 survey_type: null
             },
-            accepted: true,
             formErrors: { 
                 q1: '',
                 q2: '',
@@ -52,13 +51,7 @@ class DashboardQuestions extends React.Component {
         this.redirect = this.redirect.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }  
-    componentWillMount()
-    {
-        if(!sessionStorage.getItem('accepted') || !sessionStorage.getItem('participant'))
-        {
-            this.setState({accepted: false});
-        }
-    }
+
     redirect(){
         let participant_info = JSON.parse(sessionStorage.getItem('participant'));
 
@@ -149,7 +142,7 @@ class DashboardQuestions extends React.Component {
     {
         let participant_info = JSON.parse(sessionStorage.getItem('participant'));
         return(
-            this.state.accepted ? (
+            (sessionStorage.getItem('accepted') && sessionStorage.getItem('participant')) ? (
                 <div>
                     <Header/>
                     <p className= " text-center font-weight-bold " style={{fontFamily: 'Calibri', fontSize: '25px', color: '#6c757d'}}> Responda as seguintes questões sobre a sua experiência com o painel apresentado: </p>
