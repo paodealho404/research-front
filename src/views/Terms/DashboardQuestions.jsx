@@ -252,7 +252,7 @@ class DashboardQuestions extends React.Component {
                                     {this.state.redirect ? (<Redirect to={{pathname:"/admin/classDashboard_" + participant_info.dashboard_sequence[0] + "/7/345/32"}}/>) : (<div></div>)}
                                 </div>
                             ) : (
-                                <Redirect to={{pathname:"/thanks"}}/>
+                                <Redirect to={{pathname:"/favoriteDashboard"}}/>
                             )}
                         </Col>
                     </Form>
