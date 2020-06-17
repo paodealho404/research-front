@@ -22,11 +22,13 @@ class ProjectTutorial extends React.Component {
         this.redirect = this.redirect.bind(this);
         this._onReady = this._onReady.bind(this);
     }
+
     componentDidMount() {
         if (!sessionStorage.getItem('accepted') || !sessionStorage.getItem('participant')) {
             this.setState({ accepted: false }, console.log('N'));
         }
     }
+
     redirect() {
         this.setState({ redirect: true });
     }
@@ -46,6 +48,7 @@ class ProjectTutorial extends React.Component {
         }
 
         const participant_info = JSON.parse(sessionStorage.getItem('participant'));
+        
         return (
             <div>
                 <Header />
@@ -64,7 +67,14 @@ class ProjectTutorial extends React.Component {
                         <Button color="#C0B283" type="button" onClick={this.redirect}>
                             Visualizar Ferramenta
                         </Button>
-                        {this.state.redirect ? (<Redirect push to={{ pathname: "/admin/classDashboard_" + participant_info.dashboard_sequence[0] + "/7/345/32" }} />) : (<div></div>)}
+                        {this.state.redirect ? ( 
+                            <div>
+                                {participant_info.dashboard_sequence[0] ? (
+                                    <Redirect push to={{ pathname: "/admin/classDashboard_" + participant_info.dashboard_sequence[0] + "/7/345/32" }} />
+                                ) : (
+                                    <Redirect to={{pathname:"/favoriteDashboard"}}/>
+                                )} 
+                            </div> ) : (<div></div>)}
                         {this.state.accepted ? <div></div> : <Redirect to={{ pathname: '/' }} />}
                     </center>
                     <br />

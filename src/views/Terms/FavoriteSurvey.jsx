@@ -71,43 +71,49 @@ class FavoriteSurvey extends React.Component{
                 <Col>
                     <p className= " text-center font-weight-bold " style={{fontFamily: 'Calibri', fontSize: '25px', color: '#6c757d'}}> Qual dos três painéis interagidos anteriormente melhor te auxiliaria no processo de tomada de decisões durante o processo de ensino/aprendizagem? </p> <br/>
                     <Form className="container">
-                        <div className="radio" style={{textAlign: 'center'}} aria-label="dashboard" name="dashboard" value={this.state.dashboard} onChange={this.handleChange}>
+                        <div className="radio" aria-label="dashboard" name="dashboard" value={this.state.dashboard} onChange={this.handleChange}>
                             <div style={{overflow: 'hidden', height: '1200px', borderRadius: '15px'}}>
                                 <img style={{display: 'block', marginLeft: 'auto', marginRight: 'auto'}} alt="Imagem do dashboard 1" src={Dashboard1}/>
                             </div>
                             <br/>
                             <br/>
-                            <label>
-                                <input className="text-secondary" style={{marginRight: '0.75em', transform: 'scale(1.5)', verticalAlign: 'middle', position: 'relative'}} id="1" value="1" name="dashboard-select" type="radio" />
-                                <div style={{fontSize: '2em', display: 'inline', verticalAlign: 'middle', position: 'relative'}}>Painel - Interação com os Recursos de Aprendizagem</div>
-                            </label>
+                            <div style={{display: 'flex', justifyContent: 'center'}}>
+                                <label>
+                                    <input className="text-secondary" style={{marginRight: '0.75em', transform: 'scale(1.5)', verticalAlign: 'middle', position: 'relative'}} id="1" value="1" name="dashboard-select" type="radio" />
+                                    <div style={{fontSize: '2em', display: 'inline', verticalAlign: 'middle', position: 'relative'}}>Painel - Interação com os Recursos de Aprendizagem</div>
+                                </label>
+                            </div>
                             <br/>
                             <br/>
-                            <div style={{overflow: 'hidden', height: '1200px', borderRadius: '15px', marginTop: '1em'}}>
+                            <div style={{overflow: 'hidden', height: '1200px', borderRadius: '15px'}}>
                                 <img style={{display: 'block', marginLeft: 'auto', marginRight: 'auto'}} alt="Imagem do dashboard 2" src={Dashboard2}/>
                             </div>
                             <br/>
                             <br/>
-                            <label>
-                                <input className="text-secondary" style={{marginRight: '0.75em', transform: 'scale(1.5)', verticalAlign: 'middle', position: 'relative'}} id="2" value="2" name="dashboard-select" type="radio" />
-                                <div style={{fontSize: '2em', display: 'inline', verticalAlign: 'middle', position: 'relative'}}>Painel - Interação com os Elementos de Jogos</div>
-                            </label>
+                            <div style={{display: 'flex', justifyContent: 'center'}}>
+                                <label>
+                                    <input className="text-secondary" style={{marginRight: '0.75em', transform: 'scale(1.5)', verticalAlign: 'middle', position: 'relative'}} id="2" value="2" name="dashboard-select" type="radio" />
+                                    <div style={{fontSize: '2em', display: 'inline', verticalAlign: 'middle', position: 'relative'}}>Painel - Interação com os Elementos de Jogos</div>
+                                </label>
+                            </div>
                             <br/>
                             <br/>
-                            <div style={{overflow: 'hidden', height: '1200px', borderRadius: '15px', marginTop: '1em'}}>
+                            <div style={{overflow: 'hidden', height: '1200px', borderRadius: '15px'}}>
                                 <img style={{display: 'block', marginLeft: 'auto', marginRight: 'auto'}} alt="Imagem do dashboard 3" src={Dashboard3}/>
                             </div>
                             <br/>
                             <br/>
-                            <label>
-                                <input className="text-secondary" style={{marginRight: '0.75em', transform: 'scale(1.5)', verticalAlign: 'middle', position: 'relative'}} id="3" value="3" name="dashboard-select" type="radio" />
-                                <div style={{fontSize: '2em', display: 'inline', verticalAlign: 'middle', position: 'relative'}}>Painel - Interação com os Recursos de Aprendizagem e Elementos de Jogos</div>
-                            </label>
-                        </div>
+                            <div style={{display: 'flex', justifyContent: 'center'}}>
+                                <label>
+                                    <input className="text-secondary" style={{marginRight: '0.75em', transform: 'scale(1.5)', verticalAlign: 'middle', position: 'relative'}} id="3" value="3" name="dashboard-select" type="radio" />
+                                    <div style={{fontSize: '2em', display: 'inline', verticalAlign: 'middle', position: 'relative'}}>Painel - Interação com os Recursos de Aprendizagem e Elementos de Jogos</div>
+                                </label>
+                        </div></
+                        div>
                         <br/>
                         <br/>
-                        <Col style={{textAlign: 'center'}}>
-                            <Button color="#C0B283" disabled={!this.state.formValid} onClick={() => this.submit()}> 
+                        <Col>
+                            <Button color="#C0B283" style={{display: 'flex', marginRight: 'auto', marginLeft: 'auto'}} disabled={!this.state.formValid} onClick={() => this.submit()}> 
                                 <span className="text-white">Submeter</span>     
                                 {this.state.submit ? (<Redirect to={{ pathname:"/thanks"}}/>) : <div></div>}  
                             </Button>
