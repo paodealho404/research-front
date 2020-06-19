@@ -71,7 +71,7 @@ class SubjectDomain extends React.Component {
                         </Col>
                         <Col md="9" xs="5">
                             <div className="numbers">
-                                <p className="card-category">Período previsto para o Domínio desse assunto</p>
+                                <p className="card-category">Período previsto para o Domínio deste assunto</p>
                                 <div style={{ fontSize: 45 }}>
                                     <CardTitle tag="p">{Date}</CardTitle>
                                 </div>
