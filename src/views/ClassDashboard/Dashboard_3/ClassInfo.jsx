@@ -63,22 +63,12 @@ render() {
                             }/>
                           </Col>
                           <Col>
-                            { optionSelected === "Dinâmicas" ? (
-                                <HelpIcon id = "2" icon = "fa fa-exclamation-triangle" color="red"
-                                help = {
-                                  <div className="text-center">
-                                    Está faltando 2 dias para para o período previsto para o domínio deste assunto finalizar e ainda 50% dos alunos não alcançaram a porcentagem mínima de interação com os recursos. Você pode criar uma missão para motivar esses alunos.
-                                  </div>
-                                }/>
-                              ) : (
-                                <HelpIcon id = "2" icon = "fa fa-exclamation-triangle"
-                                help = {
-                                  <div className="text-center">
-                                    Nenhum alerta para este assunto.
-                                  </div>
-                                }/>
-                              )
-                            }
+                            <HelpIcon id = "2" icon = "fa fa-exclamation-triangle"
+                            help = {
+                              <div className="text-center">
+                                Nenhum alerta para este assunto.
+                              </div>
+                            }/>
                           </Col>
                       </ButtonGroup>
                   </div>  

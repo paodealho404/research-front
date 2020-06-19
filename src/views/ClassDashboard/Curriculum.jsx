@@ -66,11 +66,7 @@ class Curriculum extends React.Component {
                 //var month = new Date().getMonth() + 1;
 
                 for (let i = 0; i < data.length; i++) {
-                    if(data[i].name === "Dinâmicas"){
-                        data[i] = { ...data[i], color: "#FBAAAA", selected: "#FBAAAA", focus: "#FBAAAA" }
-                    } else {
-                        data[i] = { ...data[i], color: "WHITE", selected: "#2684FF", focus: "#B2D4FF" }
-                    }
+                    data[i] = { ...data[i], color: "WHITE", selected: "#2684FF", focus: "#B2D4FF" };
                 }
 
                 this.setState({
