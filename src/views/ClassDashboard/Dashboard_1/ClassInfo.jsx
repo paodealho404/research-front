@@ -25,7 +25,7 @@ import { PerformanceChart } from "../Chart/PerformanceChart/PerformanceChart.jsx
 
 class ClassInfo extends React.Component{ 
 render() {
-  const { courseId, classroomId, curriculumId, optionSelected } = this.props;
+  const { courseId, classroomId, curriculumId } = this.props;
   return(
     <div>
       <Row>
