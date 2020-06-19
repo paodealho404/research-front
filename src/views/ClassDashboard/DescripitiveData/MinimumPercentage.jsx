@@ -63,7 +63,7 @@ class StudentsReachedPercentage extends React.Component {
                 </Col>
                 <Col md="8" xs="5">
                   <div className="numbers">
-                    <p className="card-category">Total de Alunos que Alcançaram o Domínimo do Assunto</p>
+                    <p className="card-category">Total de Alunos que Alcançaram o Domínio do Assunto</p>
                     <div style={{ fontSize: 45 }}>
                         <CardTitle tag="p"> {this.state.totalStudents} </CardTitle>
                     </div>
