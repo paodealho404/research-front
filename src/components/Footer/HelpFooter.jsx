@@ -14,9 +14,9 @@ const HelpFooter = (props) => {
     
     const toggle = () => setModal(!modal);
 
-    const video_dashboard_1 = "W9zFXOEESy0";
-    const video_dashboard_2 = "3ylIW-LlrQ4";
-    const video_dashboard_3 = "Tu4sXwpY6S0";
+    const video_dashboard_1 = "K0PkZv8ZLl8";
+    const video_dashboard_2 = "_MFM-jQPuYM";
+    const video_dashboard_3 = "xEklw7jsieI";
 
     const opts = {
         height: '390',
