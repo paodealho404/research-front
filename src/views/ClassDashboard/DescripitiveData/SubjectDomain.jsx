@@ -47,7 +47,7 @@ class SubjectDomain extends React.Component {
             .catch(error => {
                 //alert("Error server " + error);
                 if (axios.isCancel(error)) {
-                    console.log('Request canceled');
+                    //console.log('Request canceled');
                 } else {
                     console.log("Error server " + error);
                 }

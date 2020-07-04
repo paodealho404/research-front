@@ -6,6 +6,8 @@ import axios from 'axios';
 
 import Header from "./components/Header";
 
+import Auth from "../Auth";
+
 const baseUrl = ((process.env.REACT_APP_API_URL) || "http://localhost:4000") + '/course';
 
 class Thanks extends React.Component {
@@ -18,7 +20,7 @@ class Thanks extends React.Component {
     }
 
     componentDidMount() {
-        if(sessionStorage.getItem('accepted')&&sessionStorage.getItem('participant')&&sessionStorage.getItem('survey1')&&sessionStorage.getItem('survey2')&&sessionStorage.getItem('survey3')) {
+        if(Auth.authenticate_participant(JSON.parse(sessionStorage.getItem('participant'))) && sessionStorage.getItem('accepted') && Auth.authenticate_survey(JSON.parse(sessionStorage.getItem('survey1'))) && Auth.authenticate_survey(JSON.parse(sessionStorage.getItem('survey2'))) && Auth.authenticate_survey(JSON.parse(sessionStorage.getItem('survey3')))) {
         let participant_info = JSON.parse(sessionStorage.getItem('participant'));
         axios.post(baseUrl + '/createParticipant', participant_info)
             .then((res) => {
@@ -51,7 +53,7 @@ class Thanks extends React.Component {
             .catch(error => {
                 //alert("Error server " + error);
                 if (axios.isCancel(error)) {
-                    console.log('Request canceled');
+                    //console.log('Request canceled');
                 } else {
                     console.log("Error server " + error);
                 }
