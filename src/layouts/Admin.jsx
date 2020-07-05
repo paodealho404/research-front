@@ -69,7 +69,7 @@ class Dashboard extends React.Component {
                     </div>
                 </div>
             ) : (
-                <Redirect to={{ pathname: '/' }}/>
+                <Redirect to={{ pathname: '/', state: {message: 'Perdão, houve um problema durante a confirmação do termo de consentimento.'} }}/>
             )
         )
     }

@@ -77,7 +77,7 @@ class ProjectTutorial extends React.Component {
                                     <Redirect to={{pathname:"/favoriteDashboard"}}/>
                                 )} 
                             </div> ) : (<div></div>)}
-                        {this.state.accepted ? <div></div> : <Redirect to={{ pathname: '/' }} />}
+                        {this.state.accepted ? <div></div> : <Redirect to={{ pathname: '/', state: {message: 'Perdão, houve um problema durante a confirmação do termo de consentimento.'} }} />}
                     </center>
                     <br />
                 </Col>

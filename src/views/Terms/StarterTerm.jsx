@@ -8,6 +8,8 @@ import {
 
 import { Link } from 'react-router-dom';
 
+import PopUp from '../PopUp';
+
 import Header from "./components/Header";
 
 class StarterTerm extends React.Component {
@@ -16,13 +18,22 @@ class StarterTerm extends React.Component {
         super(props);
         this.state = {
             terms : '0',
-            checkValid: false,
+            checkValid: false
         }
         this.handleCheckbox = this.handleCheckbox.bind(this);
     }
 
     componentDidMount() {
         sessionStorage.clear();
+
+        if (this.props.location.state && this.props.location.state.message) {
+            PopUp.showMessage("error", this.props.location.state.message);
+
+            this.props.history.replace({
+                pathname: this.props.location.pathname,
+                state: {}
+            });
+        }
     }
     
     handleCheckbox() {
@@ -30,10 +41,11 @@ class StarterTerm extends React.Component {
             checkValid : !prevState.checkValid
         }));
     }
-    accept()
-    {
+
+    accept() {
         sessionStorage.setItem('accepted', true);
     }
+
     render () {
         return(
             <div>
