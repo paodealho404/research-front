@@ -44,12 +44,13 @@ class Thanks extends React.Component {
                     <Header/>
                     <center className="col" style={{height: '585px', flexDirection: 'column', justifyContent: 'center', display: 'flex'}}>
                         <p style={{color: "#000000", fontSize: '22px'}}>Este é o final da pesquisa. Muito obrigado pela colaboração!</p>
-                        {this.state.redirect_start ? (<Redirect to={{ pathname:"/" }}/>) : <div></div>}
                     </center>
                     {this.state.redirect ? (<Redirect to={{pathname:"/admin/classDashboard_" + participant_info.dashboard_sequence[0] + "/7/345/32"}}/>) : (<div></div>)}
                 </div>
             ) : (
-                <Redirect to={{ pathname:"/", state: {message: 'Perdão, houve um problema durante a confirmação do termo de consentimento.'}}}/>
+                <div>
+                    { this.state.redirect_start ? (<Redirect to={{ pathname:"/" }}/>) : (<Redirect to={{ pathname:"/", state: {message: 'Perdão, houve um problema durante a confirmação do termo de consentimento.'}}}/>) }
+                </div>
             )
         )
     }
